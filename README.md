@@ -1,10 +1,8 @@
-<<<<<<< HEAD
+
 # Sorting-Algorithms-Visualizer
 This project is a Web Visualization tool for sorting algorithms.
-=======
-# Sorting_Visualizer
 
-This project is a Web Visualization tool for sorting algorithms.
+Check out project on : https://sort-algo-visualizer.netlify.app/
 
 When you click on certain algorithm, it starts visualizing the sorting algorithm in a beautiful way.
 
