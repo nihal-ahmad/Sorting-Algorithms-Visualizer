@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="array-inputs">
+          <p>Size of the array:</p>
+          <input
+            id="a_size"
+            type="range"
+            min="20"
+            max="150"
+            step="1"
+            value="50"
+          />
+          <p>Speed of algorithm:</p>
+          <input id="a_speed" type="range" min="1" max="5" step="1" value="2" />
+          <button id="a_generate">Generate New Array!</button>
+        </div>
+
+        <div class="header_right">
+          <div id="sort"><p class="nav-heading">Sorting visualizer</p></div>
+
+          <div class="algos">
+            <button type="button" class="btn btn-success">Bubble</button>
+            <!-- <button>Selection</button>
+            <button>Insertion</button> -->
+            <button type="button" class="btn btn-success">Merge</button>
+            <button type="button" class="btn btn-success">Quick</button>
+            <!-- <button
+              type="button  class="
+              btn
+              btn-success
+              style="margin-right: 0px;"
+            >
+              Heap
+            </button> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="Info_Cont1">
+        <!-- <p>This is First Container</p> -->
+        <strong><b>Time Complexity ::</b></strong>
+        <br />
+        <br />
+        <ul>
+          <li>
+            <strong><b> Bubble Sort ::</b> </strong>
+            <b
+              ><ol>
+                <li>
+                  <b>Best Case : O(N)</b>
+                </li>
+                <li>
+                  <b>Worst Case : O(N<sup>2</sup>)</b>
+                </li>
+              </ol>
+            </b>
+          </li>
+        </ul>
+        <br />
+        <br />
+        <ul>
+          <li>
+            <strong><b> Merge Sort ::</b> </strong>
+            <b>
+              <ol>
+                <li>
+                  <b>Best Case : O(Nlog(N))</b>
+                </li>
+                <li>
+                  <b>Worst Case : O(Nlog(N))</b>
+                </li>
+              </ol></b
+            >
+          </li>
+        </ul>
+        <br />
+        <br />
+        <ul>
+          <li>
+            <strong><b> Quick Sort ::</b> </strong>
+            <b>
+              <ol>
+                <li>
+                  <b>Best Case : O(Nlog(N))</b>
+                </li>
+                <li>
+                  <b>Worst Case : O(N<sup>2</sup></b>
+                </li>
+              </ol></b
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="array_container"></div>
+
+      <div id="Info_Cont2">
+        <!-- <p>This is Second Container</p> -->
+        <!-- <div id="y-left"></div>
+       <div id="y-right"></div> -->
+        <table>
+          <br />
+          <br />
+          <tr>
+            <td>
+              <div id="bloc1a"></div>
+            </td>
+            <td>
+              <div id="bloc1b"><strong>COMPARING</strong></div>
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <div id="bloc2a"></div>
+            </td>
+            <td>
+              <div id="bloc2b"><strong>SWAPPING</strong></div>
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <div id="bloc3a"></div>
+            </td>
+            <td>
+              <div id="bloc3b"><strong>UNSORTED</strong></div>
+            </td>
+          </tr>
+          <br />
+          <tr>
+            <td>
+              <div id="bloc4a"></div>
+            </td>
+            <td>
+              <div id="bloc4b"><strong>SORTED</strong></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <strong id="str">CREATED BY:</strong> <br />
+
+      <button id="contact" type="button" class="btn btn-success">
+        <a
+          id="link"
+          href="https://www.linkedin.com/in/nihal-ahmad-46042a192/"
+          target="_blank"
+          ><strong><b>NIHAL AHMAD</b></strong></a
+        >
+      </button>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+    <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>
+    <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <!-- <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script> -->
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <!-- <script src="./scripts/heap_sort.js"></script> -->
+  </body>
+</html>
