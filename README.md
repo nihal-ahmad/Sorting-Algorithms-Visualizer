@@ -6,7 +6,7 @@ Check out project on : https://sort-algo-visualizer.netlify.app/
 
 When you click on certain algorithm, it starts visualizing the sorting algorithm in a beautiful way.
 
-Significance of different colours in visualization:
+## Significance of different colours in visualization:
 
 1: Yellow=> Signifies which element we are currently looking.
 
